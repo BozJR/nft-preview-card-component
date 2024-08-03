@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d192c;
+    font-family: "Outfit", sans-serif;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    margin: 3.875rem 1.5rem;
+    background-color: #15263f;
+    border-radius: 0.938rem;
+    padding: 1.5rem;
+}
+
+.card__nft-image {
+    display: flex;
+    justify-content: center;  
+}
+
+.card__nft-image img {
+    border-radius: 0.5rem;
+}
+
+.card__description {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card__description h1 {
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.card__description p {
+    color: #8bacd9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card__pricing {
+    display: inline-flex;
+    gap: 5rem;   
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color:  #979797;
+}
+
+.card__pricing .price {
+    color: cyan;
+}
+
+.card__pricing .days-left {
+    color: #8bacd9;
+    margin-left: auto;    
+}
+
+.card__creator {
+    display: inline-flex;
+    gap: 1rem;
+    color: white;
+    font-size: 14px;
+}
+
+.card__creator img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.card__creator p {
+    align-self: center;
+}
+
+.card__creator span {
+    color: #8bacd9;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    .card__container {
+        max-width: 350px;
+        max-height: 596px;
+        margin: auto;
+        margin-top: 9.5rem;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .card__container {
+        max-width: 21.875rem;
+        max-height: 37.25rem;
+        margin: 9.5rem 34.063rem;
+    }
+
+    .card__nft-image img {
+        width: 302px;
+        height: 302px;
+
+    }
+
+    .card__description p {
+        padding-bottom: 1rem;
+    }
+
+    .card__pricing {
+        padding-bottom: 1rem;
+    }
+}
